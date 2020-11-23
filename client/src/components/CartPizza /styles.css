@@ -1,0 +1,12 @@
+.cartpizza {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid grey;
+  padding: 5px 0;
+}
+.cartpizza_img {
+  width: 150px;
+}
+.cartpizza_handles {
+}

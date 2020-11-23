@@ -1,0 +1,9 @@
+.pizza {
+  width: 200px;
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid black;
+}
+.pizza_img {
+  width: 100%;
+}

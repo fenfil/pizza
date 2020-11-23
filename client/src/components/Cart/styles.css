@@ -1,0 +1,9 @@
+.cart_order {
+  color: white;
+  text-decoration: none;
+  background-color: blue;
+  padding: 7px 13px;
+  font-size: 20px;
+  border: none;
+  border-radius: 5px;
+}

@@ -1,0 +1,16 @@
+.minicart {
+  position: relative;
+}
+.minicart_list {
+  position: absolute;
+  padding: 10px;
+  width: 300px;
+  top: 20px;
+  right: 30px;
+  border: 1px solid black;
+  background-color: #fff;
+}
+.minicart_order {
+  padding: 5px 8px;
+  font-size: 18px;
+}
