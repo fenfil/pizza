@@ -1,9 +1,9 @@
 # best pizza here
 
 to start client
-cd client && npm i && npm start
+cd client && yarn && yarn start
 
 to start server
-cd server && npm i && npm start
+cd server && yarn && yarn start
 
 .env is added to repo for convenience
