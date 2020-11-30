@@ -1,9 +1,21 @@
+.cart {
+  width: 800px;
+  margin: 0 auto;
+  padding-top: 10px;
+}
 .cart_order {
   color: white;
   text-decoration: none;
-  background-color: blue;
+  background-color: #ff6900;
   padding: 7px 13px;
   font-size: 20px;
   border: none;
   border-radius: 5px;
+}
+.cart_total {
+  font-size: 18px;
+}
+.cart_input {
+  display: block;
+  margin-bottom: 10px;
 }

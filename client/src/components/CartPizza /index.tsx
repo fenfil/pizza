@@ -15,7 +15,7 @@ const CartPizza: React.FC<{
     <div className="cartpizza">
       <img src={data.url} alt={data.title} className="cartpizza_img" />
       <p className="cartpizza_title">{data.title}</p>
-      <div className="cartpizza_handles">
+      <div className="cartpizza_handles flex__default">
         <button onClick={disorder} data-id={data.id}>
           -
         </button>

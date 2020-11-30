@@ -17,7 +17,7 @@ const MinicartPizza: React.FC<{
           <p className="minicartpizza_title">{data.title}</p>
         </div>
         <div className="flex__default">
-          <div className="flex__default">
+          <div className="flex__default minicartpizza_controls">
             <button onClick={disorder} data-id={data.id}>
               -
             </button>

@@ -23,7 +23,12 @@ const History: React.FC = () => {
       .catch(console.error);
   }, []);
 
-  if (!data[orderId as number]) return null;
+  if (!data[orderId as number])
+    return (
+      <div className="history">
+        <h4>You haven't ordered anything yet</h4>
+      </div>
+    );
 
   return (
     <div className="history">
@@ -33,6 +38,7 @@ const History: React.FC = () => {
           <select
             value={orderId as number}
             onChange={e => setOrderId(+e.target.value)}
+            className="history_order-selector"
           >
             {data.map((pizzas, id) => (
               <option key={id} value={id}>

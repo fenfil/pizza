@@ -2,6 +2,7 @@ import React from "react";
 import Header from "../Header";
 import "./styles.css";
 import ReduxToastr from "react-redux-toastr";
+import Container from "../Container";
 
 const Layout: React.FC = ({ children }) => (
   <div className="layout">
@@ -16,7 +17,7 @@ const Layout: React.FC = ({ children }) => (
       closeOnToastrClick
     />
     <Header />
-    <div className="main">{children}</div>
+    <Container>{children}</Container>
   </div>
 );
 

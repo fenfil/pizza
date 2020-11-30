@@ -2,11 +2,28 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 1px solid grey;
   padding: 5px 0;
+  margin-bottom: 7px;
+  border-bottom: 1px solid lightgray;
 }
 .cartpizza_img {
   width: 150px;
 }
+.cartpizza_title {
+  width: 200px;
+  text-align: center;
+}
 .cartpizza_handles {
+  border: 1px solid grey;
+  border-radius: 5px;
+  width: 70px;
+}
+.cartpizza_handles button {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
+.cartpizza_price {
+  text-align: right;
+  width: 100px;
 }

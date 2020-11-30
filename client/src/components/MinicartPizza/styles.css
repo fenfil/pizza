@@ -1,15 +1,24 @@
 .minicartpizza {
   display: flex;
   align-items: center;
-  border-bottom: 1px solid grey;
+  border-bottom: 1px solid lightgray;
   padding: 5px 0;
 }
 .minicartpizza_img {
   width: 30%;
 }
 .minicartpizza_input {
-  width: 30px;
 }
 .minicartpizza_info {
   width: 70%;
+}
+.minicartpizza_controls {
+  border: 1px solid grey;
+  border-radius: 5px;
+  width: 70px;
+}
+.minicartpizza_controls button {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
 }

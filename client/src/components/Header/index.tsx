@@ -6,6 +6,7 @@ import MiniCart from "../MiniCart";
 import { currencyToDisplayName } from "../../utils/sanitizers";
 import { toggleCurrency } from "../../slices/rates";
 import { Link } from "react-router-dom";
+import Container from "../Container";
 
 interface Selector {
   name: string;
@@ -26,28 +27,30 @@ const Header = () => {
 
   return (
     <header className="header">
-      <Link to="/" className="header_title">
-        Pizza
-      </Link>
-      <div className="header_menu">
-        <div className="btn" onClick={() => dispatch(toggleCurrency())}>
-          {currency}
-        </div>
-        {isAuth ? (
-          <Link className="btn" to="/history">
-            {name}
-          </Link>
-        ) : (
-          <div>
-            <Link to="/login" className="header_login">
-              Login
-            </Link>
-            <Link to="/register" className="header_login">
-              Register
-            </Link>
+      <div className="header_container">
+        <Link to="/" className="header_title">
+          Pizza
+        </Link>
+        <div className="header_menu">
+          <div className="btn" onClick={() => dispatch(toggleCurrency())}>
+            {currency}
           </div>
-        )}
-        <MiniCart />
+          {isAuth ? (
+            <Link className="btn" to="/history">
+              {name}
+            </Link>
+          ) : (
+            <div>
+              <Link to="/login" className="header_login">
+                Login
+              </Link>
+              <Link to="/register" className="header_login">
+                Register
+              </Link>
+            </div>
+          )}
+          <MiniCart />
+        </div>
       </div>
     </header>
   );

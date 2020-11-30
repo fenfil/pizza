@@ -47,7 +47,7 @@ const Cart: React.FC = () => {
           <p className="tar">Subtotal: {formatMoney(subtotal)}</p>
           <p className="tar">VAT: {formatMoney(vat)}</p>
           <p className="tar">Delivery: {formatMoney(delivery)}</p>
-          <p className="tar">
+          <p className="tar cart_total">
             Total: {formatMoney(subtotal + vat + delivery)}{" "}
             {currencyToDisplayName(currency)}
           </p>
@@ -55,11 +55,15 @@ const Cart: React.FC = () => {
             type="text"
             value={email}
             onChange={e => setEmail(e.target.value)}
+            className="cart_input"
+            placeholder="Email"
           />
           <input
             type="text"
             value={address}
             onChange={e => setAddress(e.target.value)}
+            className="cart_input"
+            placeholder="Address"
           />
           <button
             className="cart_order"

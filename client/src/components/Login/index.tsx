@@ -42,16 +42,18 @@ const Login = () => {
         value={name}
         onChange={e => setName(e.target.value)}
         placeholder="Username"
-        className="login_name"
+        className="login_input"
       />
       <input
-        type="text"
+        type="password"
         value={password}
         onChange={e => setPassword(e.target.value)}
         placeholder="Password"
-        className="login_password"
+        className="login_input"
       />
-      <button type="submit">Login</button>
+      <button type="submit" className="btn">
+        Login
+      </button>
     </form>
   );
 };

@@ -1,6 +1,12 @@
+.history {
+  padding-top: 10px;
+}
 .history_img {
   width: 100px;
 }
 .pizza_title {
   color: black;
+}
+.history_order-selector {
+  margin-left: 5px;
 }

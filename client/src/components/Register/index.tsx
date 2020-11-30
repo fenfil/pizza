@@ -48,26 +48,32 @@ const Register = () => {
         value={name}
         onChange={e => setName(e.target.value)}
         placeholder="Username"
+        className="register_input"
       />
       <input
         type="text"
         value={email}
         onChange={e => setEmail(e.target.value)}
         placeholder="Email"
+        className="register_input"
       />
       <input
-        type="text"
+        type="password"
         value={password}
         onChange={e => setPassword(e.target.value)}
         placeholder="Password"
+        className="register_input"
       />
       <input
         type="text"
         value={address}
         onChange={e => setAddress(e.target.value)}
         placeholder="Address"
+        className="register_input"
       />
-      <button type="submit">Register</button>
+      <button type="submit" className="btn">
+        Register
+      </button>
     </form>
   );
 };
